@@ -1,4 +1,4 @@
-#__Chatbot with Llama 2 and Streamlit__
+# __Chatbot with Llama 2 and Streamlit__
 This project demonstrates how to create an interactive chatbot using the Llama 2 model within a Streamlit app. The chatbot interacts with users based on data provided in CSV files. It leverages advanced techniques like sentence transformers for creating data embeddings and a vector store for efficient data retrieval.
 Features
 Upload CSV files to provide data for the chatbot
