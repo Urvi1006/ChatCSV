@@ -2,28 +2,36 @@
 This project demonstrates how to create an interactive chatbot using the Llama 2 model within a Streamlit app. The chatbot interacts with users based on data provided in CSV files. It leverages advanced techniques like sentence transformers for creating data embeddings and a vector store for efficient data retrieval.
 ## Features
 * Upload CSV files to provide data for the chatbot
--Generate embeddings from CSV data using Sentence Transformers
-Store embeddings in a local vector store for quick retrieval
-Interactive chat interface powered by Streamlit
-Real-time responses to user queries based on the CSV data
-Installation
+* Generate embeddings from CSV data using Sentence Transformers
+* Store embeddings in a local vector store for quick retrieval
+* Interactive chat interface powered by Streamlit
+* Real-time responses to user queries based on the CSV data
+## Installation
 To run this project locally, follow these steps:
-Clone the repository:
-Use the git clone command followed by the repository URL.
-Change directory to the cloned repository using the cd command.
-Create a virtual environment:
-Use the python -m venv venv command to create a virtual environment.
-Activate the virtual environment using the appropriate command for your operating system (source venv/bin/activate for Unix-like systems or venv\Scripts\activate for Windows).
-Install dependencies:
-Use the pip install -r requirements.txt command to install the necessary dependencies listed in the requirements.txt file.
-Run the Streamlit app:
-Use the streamlit run app.py command to start the Streamlit application.
-Usage
-Open your browser and navigate to http://localhost:8501.
-Upload a CSV file containing data for the chatbot.
-Start asking questions through the chat interface.
+### Clone the repository:
+```bash
+git clone https://github.com/yourusername/chatbot-llama2-streamlit.git
+cd chatbot-llama2-streamlit
+```
+### Create a virtual environment:
+```bash
+conda create --name chatcsv
+conda activate chatcsv
+```
+### Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+### Run the Streamlit app:
+```bash
+app.py
+```
+## Usage
+* Open your browser and navigate to http://localhost:8501.
+* Upload a CSV file containing data for the chatbot.
+* Start asking questions through the chat interface.
 The chatbot will respond based on the data from the uploaded CSV file.
-Components
+## Components
 1. Llama 2 Model
 Role: Acts as the brain of the chatbot, interpreting user inputs and generating responses.
 2. Streamlit App
